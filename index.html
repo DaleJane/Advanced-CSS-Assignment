@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS Assignment</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        #container {
+            max-width: 960px;
+            margin: 30px auto;
+            display: grid;
+            grid-template-columns: repeat(5, 160px);
+            grid-template-rows: repeat(2, 120px);
+            column-gap: 40px;
+            row-gap: 50px;
+            justify-content: start;
+            align-items: center;
+        }
+
+        .box {
+            box-sizing: border-box;
+            background-color: #00a8eb;
+            border: 1px solid black;
+            border-radius: 8px;
+            width: 140px;
+            height: 110px;
+            overflow: hidden;
+            background-image: url(placeholder-image.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: top;
+        }
+
+    
+        .box p {
+            background-color: #ffffff;
+            color: black;
+            text-align: center;
+            position: relative;
+            top: 74px;
+        }
+
+
+
+
+
+
+
+
+
+        @media screen and (max-width: 1024px) {
+            #container {
+                grid-template-columns: repeat(5, 160px);
+                grid-template-rows: repeat(2, 120px);
+            }
+
+            #heading h1 {
+            font-weight: 400;
+            font-size: 24px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            #container {
+                grid-template-columns: repeat(3, 160px);
+                grid-template-rows: repeat(4, 120px);
+            }
+            #heading h1 {
+            font-weight: 400;
+            font-size: 24px;
+            }
+        }
+
+        @media screen and (max-width: 414px) {
+            #container {
+                grid-template-columns: repeat(1, 120px);
+                grid-template-rows: repeat(10, 120px);
+            }
+            #heading h1 {
+            font-weight: 400;
+            font-size: 22px;
+            }
+        }
+        
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="heading">
+        <h1>Gallery Heading</h1>
+    </div>
+    
+
+        
+    <div id="container">
+        <div class="box">
+            <p>Image Title</p>
+        </div>
+        <div class="box">
+            <p>Image Title</p>
+        </div>
+        <div class="box">
+            <p>Image Title</p>
+        </div>
+        <div class="box">
+            <p>Image Title</p>
+        </div>
+        <div class="box">
+            <p>Image Title</p>
+        </div>
+        <div class="box">
+            <p>Image Title</p>
+        </div>
+        <div class="box">
+            <p>Image Title</p>
+        </div>
+        <div class="box">
+            <p>Image Title</p>
+        </div>
+        <div class="box">
+            <p>Image Title</p>
+        </div>
+        <div class="box">
+            <p>Image Title</p>
+        </div>
+
+    </div>
+    <div id="paragraph">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aut error fuga autem voluptates. Maiores,
+            deserunt non inventore nulla saepe consequuntur id voluptatem itaque obcaecati reprehenderit tempore
+            molestias, autem labore quaerat facere incidunt iure. Enim officiis laborum nemo totam repudiandae
+            exercitationem nostrum id distinctio impedit doloribus repellat voluptas non ab assumenda aperiam voluptatem
+            dolorum facilis incidunt dicta, reiciendis autem suscipit commodi sint ipsam. Quibusdam, vitae! Cumque porro
+            pariatur libero iure nisi repudiandae sapiente voluptatibus. Dolores saepe tenetur est vero quam
+            accusantium, debitis aliquam at in dolorum animi necessitatibus corporis praesentium, voluptates obcaecati
+            impedit aliquid sunt repudiandae voluptate nihil ut delectus!</p>
+    </div>
+</body>
+
+</html>
